@@ -1,0 +1,19 @@
+.place__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+@media screen and (max-width: 660px) {
+    .place__link {
+        margin-left: 48px;
+    }
+}
+
+
+
+@media screen and (max-width: 320px) {
+    .place__link {
+        margin-left: 16px;
+    }
+}
