@@ -1,0 +1,46 @@
+.baikal {
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-height: 740px;
+    background-image: url(../../images/baikal-background.jpg);
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.baikal::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2A2C2F;
+    opacity: .3;
+    transition: opacity .3s ease-in-out;
+}
+
+.baikal:hover::after{
+    opacity: .8;
+}
+
+@media screen and (max-width: 1025px) {
+    .baikal {
+        min-height: 640px;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .baikal {
+        min-height: 480px;
+    }
+    
+}
+
+@media screen and (max-width: 399px) {
+    .baikal {
+        min-height: 200px;
+    }
+    
+}
