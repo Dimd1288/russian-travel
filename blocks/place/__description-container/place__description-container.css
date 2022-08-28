@@ -4,7 +4,7 @@
 
 @media screen and (max-width: 660px){
     .place__description-container {
-        width: 90%;
+        width: calc(100% - 32px);
         margin: 0 auto;
     }
 }
