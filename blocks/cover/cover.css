@@ -1,14 +1,15 @@
-.baikal {
+.cover {
     display: flex;
     position: relative;
-    width: 100%;
+    width: calc(100% - 96px);
     min-height: 740px;
     background-image: url(../../images/baikal-background.jpg);
     background-size: cover;
+    background-position: center;
     margin: 0 auto;
 }
 
-.baikal::after {
+.cover::after {
     content: "";
     position: absolute;
     top: 0;
@@ -20,26 +21,27 @@
     transition: opacity .3s ease-in-out;
 }
 
-.baikal:hover::after{
+.cover:hover::after{
     opacity: .8;
 }
 
-@media screen and (max-width: 1025px) {
-    .baikal {
+@media screen and (max-width: 1024px) {
+    .cover {
+        width: 100%;
         min-height: 640px;
     }
     
 }
 
 @media screen and (max-width: 800px) {
-    .baikal {
+    .cover {
         min-height: 480px;
     }
     
 }
 
 @media screen and (max-width: 399px) {
-    .baikal {
+    .cover {
         min-height: 200px;
     }
     
